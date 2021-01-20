@@ -36,3 +36,5 @@ const fetchData = async (contentType, entryId = null) => {
       );
   }
 };
+
+export default fetchData;
