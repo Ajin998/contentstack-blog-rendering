@@ -6,16 +6,19 @@ import styles from "../../styles/blog.module.css";
 
 function Blog(props) {
   return (
-    <div className={styles[""]}>
+    <div className={styles["blog__section__main__div"]}>
       <Header />
       <SingleBlog {...props.blog} />
       <Footer />
     </div>
   );
 }
-//For dynamic routing context is used for retreiving params
+//For dynamic routing context is used for retreiving params.id
 export const getStaticProps = async (context) => {
-  let result = await fetchData("contentstack_blog_rendering", context.params.id);
+  let result = await fetchData(
+    "contentstack_blog_rendering",
+    context.params.id
+  );
   return {
     props: {
       blog: result,
@@ -23,13 +26,19 @@ export const getStaticProps = async (context) => {
   };
 };
 
+export const getStaticPaths = async () => {
+  let blogs = await fetchData("contentstack_blog_rendering");
+  let paths = blogs.map((blog) => {
+    return {
+      params: {
+        id: `${blog.uid}`,
+      },
+    };
+  });
+  return {
+    paths,
+    fallback: false,
+  };
+};
 
-export const getStaticPaths = async()=>{
-    let blogs = await fetchData("contentstack_blog_rendering");
-    let paths= blogs.map(blog=>(
-        params:{
-            id:`${blog.uid}`,
-        },
-        
-    ));
-}
+export default Blog;

@@ -8,7 +8,7 @@ function BlogPage(props) {
         src={props.blog_image.url}
         alt={props.blog_image.title}
       />
-      <Link href={"/blogs/${props.uid}"}>
+      <Link href={`/blogs/${props.uid}`}>
         <h2 className={styles["blog__title"]}>{props.blog_heading}</h2>
       </Link>
     </div>
