@@ -13,18 +13,6 @@ function Blog(props) {
     </div>
   );
 }
-//For dynamic routing context is used for retreiving params.id
-export const getStaticProps = async (context) => {
-  let result = await fetchData(
-    "contentstack_blog_rendering",
-    context.params.id
-  );
-  return {
-    props: {
-      blog: result,
-    },
-  };
-};
 
 export const getStaticPaths = async () => {
   let blogs = await fetchData("contentstack_blog_rendering");
@@ -38,6 +26,18 @@ export const getStaticPaths = async () => {
   return {
     paths,
     fallback: false,
+  };
+};
+//For dynamic routing context is used for retreiving params.id
+export const getStaticProps = async (context) => {
+  let result = await fetchData(
+    "contentstack_blog_rendering",
+    context.params.id
+  );
+  return {
+    props: {
+      blog: result,
+    },
   };
 };
 

@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Overlock:wght@400;700&display=swap');
+
+
+
+
+.Blog_main_content {
+    display: flex;
+    font-family: 'Overlock',
+    cursive;
+}
+
+.Blog_img {
+    width: 45vw;
+    margin: 30px auto;
+    border-radius: 30px;
+}
+
+.Blog_content_section {
+    border: 5px solid #E8D293;
+    padding: 10px;
+    width: 50%;
+    text-align: center;
+    margin: 2em;
+    margin-left: 5em;
+    border-radius: 20px
+}
+
+.Blog_description {
+    text-align: justify;
+    line-height: 2;
+
+}
+
+.Blog_related_links {
+    border: 2px solid black;
+    width: 30%;
+    height: 50%;
+    text-align: center;
+    margin-top: 2em;
+    margin-left: 2em;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.Blog_related_links_title {
+    text-decoration: underline;
+}
+
+.Blog_related_links_content {
+    cursor: pointer;
+}

@@ -6,9 +6,9 @@
     align-items: center;
     border: 1px solid black;
     margin: auto;
-    margin-top:5%;
+    margin-top: 5%;
     padding: 2%;
-    width:50%;
+    width: 50%;
     font-family: 'Overlock',
         cursive;
     font-weight: bold;
@@ -20,3 +20,8 @@
     width: 400px;
     border-radius: 30px;
 }
+
+.blog__title {
+    cursor: pointer;
+}
+

@@ -22,10 +22,10 @@ function Header() {
         <a className={styles["links"]} href="/">
           Home
         </a>
-        <a className={styles["links"]} href="#">
+        <a className={styles["links"]} href="#About">
           About
         </a>
-        <a className={styles["links"]} href="/">
+        <a className={styles["links"]} href="#Blogs">
           Blogs
         </a>
       </div>
