@@ -1,3 +1,22 @@
+# Blog rendering using contentstack as a backend
+
+This project uses contentstack as a backend for fetching data in frontend side.
+
+# Technologies
+
+1. Next.js
+2. Contentstack
+3. CSS
+4. HTML
+5. Git
+6. bash
+
+# Live link 
+
+
+
+
+----------------
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
