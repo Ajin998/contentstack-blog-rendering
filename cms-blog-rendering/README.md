@@ -15,12 +15,12 @@ This project uses contentstack as a backend for fetching data in frontend side.
 
 1. Clone the git repository in your local directory.
 2. After cloning install all the node dependencies by typing npm install.
-3. After installing, node_modules and package-lock.json in your root directory.
+3. After installing, node_modules and package-lock.json will be added in your root directory.
 4. After that type npm run dev to run the application in development environment.
 5. You will see that application is running in localhost 3000 port.
 
 # Live link 
-
+https://cms-blog-rendering.vercel.app/
 
 
 
