@@ -25,3 +25,31 @@
     cursor: pointer;
 }
 
+@media (max-width: 900px) {
+    .blog__img {
+        width: 550px;
+    }
+
+    .main__div {
+        width: 100%;
+    }
+
+    .blog__title {
+        font-size: 40px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 580px) {
+    .main__div {
+        width: 100%;
+    }
+
+    .blog__img {
+        width: 90vw;
+    }
+
+    .blog__title {
+        font-size: 20px;
+    }
+}

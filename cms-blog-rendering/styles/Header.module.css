@@ -21,3 +21,11 @@
     color: white;
     padding: 10px;
 }
+
+@media (max-width: 500px) {
+    .header__search {
+        display: none;
+    }
+
+
+}
